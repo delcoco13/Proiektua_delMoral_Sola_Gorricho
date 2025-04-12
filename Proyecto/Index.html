@@ -3,52 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-		body{
-		font-family: Arial, Helvetica, sans-serif;
-		padding: 0;
-		margin: 0;
-		}
-
-		.goiburuaOrokorra{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			gap: 2rem;
-			width: 100%;
-			padding-top: 5px;
-			padding-bottom: 5px;
-			background: red;
-			color: #fff;
-		}
-
-		.barrukoFlex{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			gap: 4rem;
-			width: 100%;
-			padding-top: 15px;
-			padding-bottom: 15px;
-			background: rgb(230, 0, 0);
-			color: #fff;
-			z-index: 1000;
-		}
-
-		div a{
-			color: white;
-			text-decoration: none;
-		}
-
-		.m_botoia{
-			border: none;
-			background-color: rgb(230, 0, 0);
-			color: white;
-			font-size: medium;
-		}
-
-	</style>
+    <title>Marvel</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body onload="loop()">
     <header class="goiburuaOrokorra">
@@ -58,33 +14,22 @@
 		<div class="Mutilak"><a href="Masculinos.html">Mutilak</a></div>
 		<div class="Neskak"><a href= "Femeninos.html">Neskak</a></div> 
 		<div class="Pelikulak"><a href="Peliculas de Marvel.html">Pelikulak</a></div>
-		<div class="Modua"><button class="m_botoia" onclick="modua()">Modua</button></div>
+		<div class="Modua"><button class="m_botoia" onclick="modua()"><img src="Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" class="argazkia"></button></div>
 	</div>
-	<h1>Ongi etorri Marveleko web horrira!!</h1>
-	<p>Web horri honetan marveleko pertsonaien informazio guztia aurkitu dezakezu.</p>
+	<div class="testua">
+		<h1>Ongi etorri Marveleko web horrira!!</h1>
+		<p>Prest zaitez superheroiak, gaizkileak eta jainkoak gure artean dabiltzan mundu batean murgiltzeko. Avenger-en borroka epikoetatik hasi eta unibertso anitzeko abentura interdimentsionaletaraino, Marvel Unibertso harrigarri honetarako atea zabalik duzu.</p>	
+	</div>
 	<script>
 		function modua(){
-			if(document.getElementsByClassName("m_botoia")[0].textContent.includes("Modua")){
-				document.getElementsByClassName("m_botoia")[0].textContent = "Iluna";
-				document.body.style.backgroundColor = "black";
+			if(document.getElementsByClassName("argazkia")[0].src.includes("Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png")){
+				document.getElementsByClassName("argazkia")[0].src = "Imagenes/toggle_off_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png";
+				document.body.style.backgroundColor = "#111";
 				document.body.style.color = "white";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.backgroundColor = "#444";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.borderBottomLeftRadius = "5px";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.borderBottomRightRadius = "5px";
-			} else if ((document.getElementsByClassName("m_botoia")[0].textContent.includes("Argia"))){
-				document.getElementsByClassName("m_botoia")[0].textContent = "Iluna";
-				document.body.style.backgroundColor = "black";
-				document.body.style.color = "white";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.backgroundColor = "#444";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.borderBottomLeftRadius = "5px";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.borderBottomRightRadius = "5px";
-			} else {
-				document.getElementsByClassName("m_botoia")[0].textContent = "Argia";
+			} else if ((document.getElementsByClassName("argazkia")[0].src.includes("Imagenes/toggle_off_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"))){
+				document.getElementsByClassName("argazkia")[0].src = "Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png";
 				document.body.style.backgroundColor = "white";
 				document.body.style.color = "black";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.backgroundColor = "white";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.borderBottomLeftRadius = "5px";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.borderBottomRightRadius = "5px";
 			}
 		}
 	</script>

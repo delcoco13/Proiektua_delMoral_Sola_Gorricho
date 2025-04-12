@@ -1,0 +1,52 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+padding: 0;
+margin: 0;
+}
+
+.goiburuaOrokorra{
+    display: flex;
+    justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: red;
+        color: #fff;
+    }
+
+    .barrukoFlex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background: rgb(141, 0, 0);
+        color: #fff;
+        z-index: 1000;
+    }
+
+    div a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .m_botoia{
+        border: none;
+        background-color: rgb(141, 0, 0);
+        color: white;
+        font-size: medium;
+    }
+
+    .testua{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }

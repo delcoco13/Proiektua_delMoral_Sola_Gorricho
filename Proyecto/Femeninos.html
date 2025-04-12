@@ -5,9 +5,18 @@
 			<style>
 					#Vol { font-size:20px }
 			</style>
+			<link rel="stylesheet" href="css/index.css">
     </head>
         <body style="background-color: #D3D3D3;">
-            <h1>Personajes Femeninos de Marvel</h1>
+			<header class="goiburuaOrokorra">
+				<h1>Personajes Femeninos de Marvel</h1>
+			</header>
+			<div class="barrukoFlex">
+				<div class="Mutilak"><a href="Masculinos.html">Mutilak</a></div>
+				<div class="Neskak"><a href="Index.html"><img src="Imagenes/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"></a></div> 
+				<div class="Pelikulak"><a href="Peliculas de Marvel.html">Pelikulak</a></div>
+				<div class="Modua"><button class="m_botoia" onclick="modua()"><img src="Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" class="argazkia"></button></div>
+			</div>
 <br>
                 <dl type="none">
                     <dt><a href="Viuda Negra.html">VIUDA NEGRA</a></dt>
@@ -71,5 +80,24 @@
 <br>
 				<div id="Vol"><a href="Index.html"><img style="width:15%" src="Imagenes/Marvel-Comics-Logo.svg.png"></a></div>
 <br>
+<script>
+	function modua(){
+		if(document.getElementsByClassName("argazkia")[0].src.includes("Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png")){
+			document.getElementsByClassName("argazkia")[0].src = "Imagenes/toggle_off_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png";
+			document.body.style.backgroundColor = "black";
+			document.body.style.color = "white";
+			document.getElementsByClassName("formulario-kontainerra")[0].style.backgroundColor = "#444";
+			document.getElementsByClassName("formulario-kontainerra")[0].style.borderBottomLeftRadius = "5px";
+			document.getElementsByClassName("formulario-kontainerra")[0].style.borderBottomRightRadius = "5px";
+		} else if ((document.getElementsByClassName("argazkia")[0].src.includes("Imagenes/toggle_off_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"))){
+			document.getElementsByClassName("argazkia")[0].src = "Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png";
+			document.body.style.backgroundColor = "white";
+			document.body.style.color = "black";
+			document.getElementsByClassName("formulario-kontainerra")[0].style.backgroundColor = "#444";
+			document.getElementsByClassName("formulario-kontainerra")[0].style.borderBottomLeftRadius = "5px";
+			document.getElementsByClassName("formulario-kontainerra")[0].style.borderBottomRightRadius = "5px";
+		}
+	}
+</script>
         </body>
 </html>
