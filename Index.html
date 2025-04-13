@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		body{
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 0;
+		margin: 0;
+		}
+
+		.goiburuaOrokorra{
+			display: flex;
+			align-items: center;
+			background: red;
+			color: #fff;
+			gap: 10px;
+			padding: 10px;
+		}
+
+		.goiburuaOrokorra h1{
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			margin-left: 145px;
+		}
+
+		.goiburuaOrokorra button{
+			border: none;
+			background-color: red;
+			color: white;
+			font-size: medium;
+			font-weight: bold;
+		}
+
+		.login{
+			display: flex;
+			align-items: end;
+			justify-content: center;
+			text-decoration: none;
+			color: white;
+			width: 60px;
+		}
+
+		.signin{
+			display: flex;
+			align-items: end;
+			justify-content: center;
+			text-decoration: none;
+			color: white;
+			width: 80px;
+		}
+
+		.barrukoFlex{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 4rem;
+			width: 100%;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			background: rgb(141, 0, 0);
+			color: #fff;
+			z-index: 1000;
+		}
+
+		a{
+			color: white;
+			text-decoration: none;
+		}
+
+		.m_botoia{
+			border: none;
+			background-color: rgb(141, 0, 0);
+			color: white;
+			font-size: medium;
+		}
+
+		.testua{
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			flex-wrap: wrap;
+			width: 50%;
+			margin: auto;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body onload="loop()">
+    <header class="goiburuaOrokorra">
+		<h1>MARVEL</h1>
+		<button><a href="login.hmtl" class="login">Log in</a></button>
+		<button><a href="sign_up" class="signin">Sign up</a></button>
+    </header>
+	<div class="barrukoFlex">
+		<div class="Mutilak"><a href="Masculinos.html">Mutilak</a></div>
+		<div class="Neskak"><a href= "Femeninos.html">Neskak</a></div> 
+		<div class="Pelikulak"><a href="Peliculas de Marvel.html">Pelikulak</a></div>
+		<div class="Modua"><button class="m_botoia" onclick="modua()"><img src="Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" class="argazkia"></button></div>
+	</div>
+	<div class="testua">
+		<h1>Ongi etorri Marveleko web horrira!!</h1>
+		<p>Prest zaitez superheroiak, gaizkileak eta jainkoak gure artean dabiltzan mundu batean murgiltzeko. Avenger-en borroka epikoetatik hasi eta unibertso anitzeko abentura interdimentsionaletaraino, Marvel Unibertso harrigarri honetarako atea zabalik duzu.</p>	
+	</div>
+	<script>
+		function modua(){
+			if(document.getElementsByClassName("argazkia")[0].src.includes("Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png")){
+				document.getElementsByClassName("argazkia")[0].src = "Imagenes/toggle_off_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png";
+				document.body.style.backgroundColor = "#111";
+				document.body.style.color = "white";
+			} else if ((document.getElementsByClassName("argazkia")[0].src.includes("Imagenes/toggle_off_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"))){
+				document.getElementsByClassName("argazkia")[0].src = "Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png";
+				document.body.style.backgroundColor = "white";
+				document.body.style.color = "black";
+			}
+		}
+	</script>
+</body>
+</html>
