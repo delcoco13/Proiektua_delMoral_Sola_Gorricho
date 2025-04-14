@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  
+  .character {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .character.active {
+    display: block;
+  }
+  
+  .card-container {
+    perspective: 1000px;
+    width: 400px;
+    height: 500px;
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .card-container:hover .card {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .card-back {
+    background-color: #2c3e50;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .card-back h3 a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .card-back h3 a:hover {
+    text-decoration: underline;
+  }
+  
+  #carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+  }
+  
+  .navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    pointer-events: none;
+  }
+  .navigation button#prev {
+    margin-left: -100px;
+  }
+  
+  .navigation button#next {
+    margin-right: -100px;
+  }
+  .navigation button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    pointer-events: all;
+    z-index: 10;
+  }
+  
+  .navigation img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  #Vol {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .goiburuaOrokorra{
+    display: flex;
+    justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: red;
+        color: #fff;
+    }
+
+    .barrukoFlex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background: rgb(141, 0, 0);
+        color: #fff;
+        z-index: 1000;
+    }
+
+    div a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .m_botoia{
+        border: none;
+        background-color: rgb(141, 0, 0);
+        color: white;
+        font-size: medium;
+    }
+
+    .testua{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
