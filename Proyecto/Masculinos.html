@@ -1,82 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<style>
-		body{
-		font-family: Arial, Helvetica, sans-serif;
-		padding: 0;
-		margin: 0;
-		}
-
-		.goiburuaOrokorra{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			gap: 2rem;
-			width: 100%;
-			padding-top: 5px;
-			padding-bottom: 5px;
-			background: red;
-			color: #fff;
-		}
-
-		.barrukoFlex{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			gap: 4rem;
-			width: 100%;
-			padding-top: 15px;
-			padding-bottom: 15px;
-			background: rgb(141, 0, 0);
-			color: #fff;
-			z-index: 1000;
-		}
-
-		div a{
-			color: white;
-			text-decoration: none;
-		}
-
-		.m_botoia{
-			border: none;
-			background-color: rgb(141, 0, 0);
-			color: white;
-			font-size: medium;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personajes Femeninos</title>
+  <link rel="stylesheet" href="css/personajes.css">
 </head>
-<body>
-	<header class="goiburuaOrokorra">
-		<h1>MARVEL</h1>
-    </header>
-	<div class="barrukoFlex">
-		<div class="Mutilak"><a href="Index.html"><img src="Imagenes/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"></a></div>
-		<div class="Neskak"><a href= "Femeninos.html">Neskak</a></div> 
-		<div class="Pelikulak"><a href="Peliculas de Marvel.html">Pelikulak</a></div>
-		<div class="Modua"><button class="m_botoia" onclick="modua()"><img src="Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" class="argazkia"></button></div>
-	</div>
-	<script>
-		function modua(){
-			if(document.getElementsByClassName("argazkia")[0].src.includes("Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png")){
-				document.getElementsByClassName("argazkia")[0].src = "Imagenes/toggle_off_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png";
-				document.body.style.backgroundColor = "black";
-				document.body.style.color = "white";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.backgroundColor = "#444";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.borderBottomLeftRadius = "5px";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.borderBottomRightRadius = "5px";
-			} else if ((document.getElementsByClassName("argazkia")[0].src.includes("Imagenes/toggle_off_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"))){
-				document.getElementsByClassName("argazkia")[0].src = "Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png";
-				document.body.style.backgroundColor = "white";
-				document.body.style.color = "black";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.backgroundColor = "#444";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.borderBottomLeftRadius = "5px";
-				document.getElementsByClassName("formulario-kontainerra")[0].style.borderBottomRightRadius = "5px";
-			}
-		}
-	</script>
+<body style="background-color: #D3D3D3;">
+  <header class="goiburuaOrokorra">
+    <h1>Personajes Femeninos de Marvel</h1>
+  </header>
+
+  <div class="barrukoFlex">
+    <div class="Mutilak"><a href="Masculinos.html">Mutilak</a></div>
+    <div class="Neskak"><a href="Index.html"><img src="Imagenes/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="home"></a></div>
+    <div class="Pelikulak"><a href="Peliculas de Marvel.html">Pelikulak</a></div>
+    <div class="Modua"><button class="m_botoia" onclick="modua()"><img src="Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" class="argazkia" alt="theme toggle"></button></div>
+  </div>
+
+  <main class="contenedor">
+    <div id="carousel">
+      <div class="character active">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <img src="Imagenes/Spider-Man.png" alt="Spider-Man">
+            </div>
+            <div class="card-back">
+				<br>
+                <dl type="none">
+                    <dt><a href="Spider-Man.html">Spider-Man</a></dt>
+						<br>
+                        <dd>Peter Parker era el hijo de Richard Parker y Mary Fitzpatrick, dos agentes de SHIELD que se infiltraron en la organización de Albert Malik.<br>
+							¿No te suena? Pues se trata de Red Skull, uno de los principales archienemigos del Capitán América, a quien pudimos ver custodiando la Gema del Alma durante La Guerra del<br>
+							Infinito. Pues bien, éste los descubrió y saboteó el avión donde viajaban los padres de Peter para que pareciese un accidente aéreo.</dd>
+							Al quedarse huérfano, Peter se mudó al barrio neoyorkino de Queens para vivir con sus tíos Benjamin Parker y May Reilly.<br> 
+							El joven creció en un ambiente lleno de amor y desarrolló una innata curiosidad por la ciencia.<br> 
+						<br>
+						<br>
+						<hr>
+			</div>
+          </div>
+        </div>
+      </div>
+      <div class="character">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <img src="Imagenes/iron_man.jpg" alt="iron man">
+            </div>
+            <div class="card-back">
+              <dt><a href="Iron Man.html">IRON MAN</a></dt> 
+               <br>
+                  <dd>Iron Man es un personaje ficticio de los cómics de Marvel Comics. Su nombre real es Tony Stark, un genio inventor, industrial y multimillonario<br>
+					que utiliza una armadura tecnológicamente avanzada que él mismo diseñó para convertirse en un superhéroe. La armadura de Iron Man le otorga una amplia variedad de habilidades,<br> 
+					incluyendo fuerza sobrehumana, vuelo, armas avanzadas y sistemas de defensa. Tony Stark se convierte en Iron Man después de ser secuestrado y herido en un ataque<br>
+					en el que se ve obligado a construir la armadura para sobrevivir. A lo largo de su historia, Iron Man lucha contra villanos y amenazas a nivel mundial,<br> 
+					Su alter ego como Tony Stark también juega un papel importante en el Universo Marvel, ya que es un destacado empresario y filántropo. <br> 
+                    <br>
+                    <br>
+                    <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="character">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <img src="Imagenes/capitan-america.jpg" alt="capitan america">
+            </div>
+            <div class="card-back">
+              <dt><a href="Capitán-América.html">CAPITAN AMERICA</a></dt>
+              <br>
+                    <dd>El Capitán América es un personaje ficticio de los cómics de Marvel Comics.<br>
+						Su nombre real es Steve Rogers, y es un superhéroe que se distingue por su valentía, integridad y patriotismo. Fue creado durante la Segunda Guerra Mundial como un súper soldado,<br>
+						gracias a un suero experimental que lo convirtió en un ser humano con fuerza sobrehumana, agilidad y resistencia.<br> 
+						El Capitán América lleva un escudo indestructible en forma de estrella y barras que usa tanto para la defensa como para el combate.<br>
+						A lo largo de su historia, ha liderado a los Vengadores y ha luchado contra diversos villanos y amenazas globales. <br>
+						El personaje personifica los valores estadounidenses y es un símbolo de la lucha por la justicia y la libertad.<br> 
+                <br>
+                <br>
+                <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="character">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <img src="Imagenes/thor.jpg" alt="bruja escarlata">
+            </div>
+            <div class="card-back">
+              <dt><a href="Thor.html">THOR</a></dt>
+              <br>
+                  <dd>Thor, en el Universo Marvel, es un poderoso superhéroe basado en la mitología nórdica.<br>
+					Es un dios asgardiano con fuerza sobrehumana, resistencia y agilidad. Su icónico martillo encantado, Mjolnir, le permite controlar el trueno, volar y canalizar poderes cósmicos.<br>
+					Conocido por su valentía, honor y sentido del deber, Thor es un miembro destacado de los Vengadores, y es esencial en la lucha contra amenazas cósmicas y supervillanos.<br>
+					Su relación con su hermano adoptivo, Loki, es un tema recurrente en sus historias.<br>
+					Thor es un personaje emblemático de Marvel que fusiona elementos de la mitología nórdica con la narrativa de superhéroes, explorando temas de honor, poder y responsabilidad en el contexto del Universo Marvel.<br> 
+                            <br>
+                            <br>
+                            <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="character">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <img src="Imagenes/deadpool.jpg" alt="deadpool">
+            </div>
+            <div class="card-back">
+              <dt><a href="Deadpool.html">DEADPOOL</a></dt>              
+              <br>
+                  <dd>Deadpool, conocido como Wade Wilson en Marvel Comics, es un carismático antihéroe caracterizado por su ingenio sarcástico y su tendencia a romper la cuarta pared, interactuando con el público.<br>
+					Posee habilidades de regeneración sobrehumanas que lo hacen prácticamente inmortal, y es un experto en combate cuerpo a cuerpo, utilizando katanas y una variedad de armas.<br>
+					Su icónico traje rojo y negro oculta un rostro desfigurado debido a una enfermedad. La historia de Deadpool está vinculada a un programa de experimentación genética que le otorgó sus poderes.<br> 
+					Aunque a veces trabaja junto a otros héroes de Marvel como los X-Men o los Vengadores, Deadpool generalmente opera de manera independiente, involucrándose en misiones poco convencionales y llenas de humor negro.<br> 
+                    <br>
+                    <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation">
+        <button id="prev"><img src="Imagenes/gezi_atzera.png" alt="prev"></button>
+        <button id="next"><img src="Imagenes/gezi_aurrera.png" alt="next"></button>
+      </div>
+    </div>
+  </main>
+
+  <div id="Vol">
+    <a href="Index.html"><img style="width:15%" src="Imagenes/Marvel-Comics-Logo.svg.png" alt="Marvel Logo"></a>
+  </div>
+
+  <script>
+    const characters = document.querySelectorAll('.character');
+    let currentIndex = 0;
+
+    document.getElementById('prev').addEventListener('click', () => {
+      characters[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex - 1 + characters.length) % characters.length;
+      characters[currentIndex].classList.add('active');
+    });
+
+    document.getElementById('next').addEventListener('click', () => {
+      characters[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % characters.length;
+      characters[currentIndex].classList.add('active');
+    });
+
+    function modua() {
+      const imgSrc = document.getElementsByClassName("argazkia")[0].src;
+      if (imgSrc.includes("toggle_on")) {
+        document.getElementsByClassName("argazkia")[0].src = "Imagenes/toggle_off_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png";
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+      } else {
+        document.getElementsByClassName("argazkia")[0].src = "Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png";
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+      }
+    }
+  </script>
 </body>
 </html>
