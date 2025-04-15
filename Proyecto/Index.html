@@ -3,35 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body onload="loop()">
     <header class="goiburuaOrokorra">
-		<h1>MARVEL</h1>
+        <h1>MARVEL</h1>
+        <button><a href="LogIn.html" class="login">Log in</a></button>
+        <button><a href="Sign_Up.html" class="signin">Sign up</a></button>
     </header>
-	<div class="barrukoFlex">
-		<div class="Mutilak"><a href="Masculinos.html">Mutilak</a></div>
-		<div class="Neskak"><a href= "Femeninos.html">Neskak</a></div> 
-		<div class="Pelikulak"><a href="Peliculas de Marvel.html">Pelikulak</a></div>
-		<div class="Modua"><button class="m_botoia" onclick="modua()"><img src="Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" class="argazkia"></button></div>
-	</div>
-	<div class="testua">
-		<h1>Ongi etorri Marveleko web horrira!!</h1>
-		<p>Prest zaitez superheroiak, gaizkileak eta jainkoak gure artean dabiltzan mundu batean murgiltzeko. Avenger-en borroka epikoetatik hasi eta unibertso anitzeko abentura interdimentsionaletaraino, Marvel Unibertso harrigarri honetarako atea zabalik duzu.</p>	
-	</div>
-	<script>
-		function modua(){
-			if(document.getElementsByClassName("argazkia")[0].src.includes("Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png")){
-				document.getElementsByClassName("argazkia")[0].src = "Imagenes/toggle_off_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png";
-				document.body.style.backgroundColor = "#111";
-				document.body.style.color = "white";
-			} else if ((document.getElementsByClassName("argazkia")[0].src.includes("Imagenes/toggle_off_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"))){
-				document.getElementsByClassName("argazkia")[0].src = "Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png";
-				document.body.style.backgroundColor = "white";
-				document.body.style.color = "black";
-			}
-		}
-	</script>
+    <div class="barrukoFlex">
+        <div class="Mutilak"><a href="Masculinos.html">Gizonak</a></div>
+        <div class="Neskak"><a href="Femeninos.html">Emakumeak</a></div> 
+        <div class="Pelikulak"><a href="Peliculas de Marvel.html">Pelikulak</a></div>
+        <div class="Modua"><button class="m_botoia" onclick="modua()"><img src="/Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" class="argazkia"></button></div>
+    </div>
+    <div class="testua">
+        <h1>Ongi etorri Marveleko web horrira!!</h1>
+        <p>Prest zaitez superheroiak, gaizkileak eta jainkoak gure artean dabiltzan mundu batean murgiltzeko. Avenger-en borroka epikoetatik hasi eta unibertso anitzeko abentura interdimentsionaletaraino, Marvel Unibertso harrigarri honetarako atea zabalik duzu.</p>	
+    </div>
+
+    <section class="kronologia-sekzioa">
+        <h2> Marvel Triologiak (Batzuk +1)</h2>
+        <div class="karrusela">
+            
+            <div class="karta">
+                <img src="/Imagenes/capitan-america.jpg">
+                <h3>Captain America: The First Avenger</h3>
+                <p>4 Pelikula</p>
+            </div>
+            
+            <div class="karta">
+                <img src="/Imagenes/avengers2.jpg">
+                <h3>Los Vengadores</h3>
+                <p>4 Pelikula</p>
+            </div></a>
+            
+            <div class="karta">
+                <img src="/Imagenes/iron_man.jpg">
+                <h3>Iron Man</h3>
+                <p>3 Pelikula</p>
+            </div>
+
+            <div class="karta">
+                <img src="/Imagenes/thor.jpg">
+                <h3>Thor</h3>
+                <p>4 Pelikula</p>
+            </div>
+
+            <div class="karta">
+                <img src="/Imagenes/spiderverse.webp">
+                <h3>Spider-Man</h3>
+                <p>3 Pelikula</p>
+            </div>
+
+            <div class="karta">
+                <img src="/Imagenes/guardianes_de_la_galaxia.jpg">
+                <h3>Guardianes de la Glaxia</h3>
+                <p>3 Pelikula</p>
+            </div>
+        </div>
+    </section>
+	<p class="flex"></p>
+	<footer>
+		<label>Kaixo</label><br>
+		<label>Kaixo</label><br>
+		<label>Kaixo</label><br>
+	</footer>
+    <script>
+        function modua(){
+            if(document.getElementsByClassName("argazkia")[0].src.includes("Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png")){
+                document.getElementsByClassName("argazkia")[0].src = "Imagenes/toggle_off_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png";
+                document.body.style.backgroundColor = "#111";
+                document.body.style.color = "white";
+            } else if ((document.getElementsByClassName("argazkia")[0].src.includes("Imagenes/toggle_off_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"))){
+                document.getElementsByClassName("argazkia")[0].src = "Imagenes/toggle_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png";
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            }
+        }
+    </script>
 </body>
 </html>

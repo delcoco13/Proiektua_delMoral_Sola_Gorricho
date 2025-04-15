@@ -1,8 +1,8 @@
 body {
-    background-image: url("/Imagenes/login.jpg");
+    background-image: url("login.jpg");
 }
 
-form {
+div {
     width: 300px;
     margin: 250px auto;
     padding: 20px;
@@ -12,10 +12,10 @@ form {
     background-color: #f9f9f9;
     font-family: sans-serif;
     transition: transform 0.3s ease; 
-   opacity: 0.93;
+    opacity: 0.93;
 }
 
-form:hover {
+div:hover {
     transform: translateY(-5px); 
 }
 
@@ -52,4 +52,9 @@ button:hover {
 
 button:active {
     transform: scale(0.95); 
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }

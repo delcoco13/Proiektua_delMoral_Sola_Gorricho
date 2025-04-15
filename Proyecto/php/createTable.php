@@ -4,16 +4,14 @@ $username = "root";
 $password = "";
 $dbname = "MarvelDB";
 
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
+
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-// sql to create table
 $sql = "CREATE TABLE Erregistroak (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+id INT(6) PRIMARY KEY AUTO_INCREMENT,
 Izena VARCHAR(30) NOT NULL,
 Abizena VARCHAR(30) NOT NULL,
 Emaila VARCHAR(50),
